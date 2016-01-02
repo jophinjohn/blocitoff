@@ -43,3 +43,6 @@ As a developer, I want to seed the development database automatically with users
 As a user, I want to mark to-do items as complete and have them deleted	3
 As a user, I want to see how many days remain before a to-do item is automatically deleted	1
 As a user, my to-dos should be automatically deleted seven days after their creation date	2
+Wireframe Examples
+
+These wireframes are meant to suggest a design, not dictate one.
