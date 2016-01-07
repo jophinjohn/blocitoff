@@ -216,11 +216,7 @@ DEPENDENCIES
   jquery-rails
   pg
   pundit
-<<<<<<< HEAD
-  rails (= 4.2.1)
-=======
   rails (= 4.2.4)
->>>>>>> blocitoffcheckpoint3
   rails_12factor
   rspec-rails (~> 3.0)
   sass-rails (~> 5.0)
