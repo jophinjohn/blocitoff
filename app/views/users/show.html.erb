@@ -1,0 +1,6 @@
++<h1>Hello User!</h1>
+ +<br />
+ +<p>Username: <%= @users.name %></p>
+ +<p>Email: <%= @users.email %></p>
+ +<p>Member since: <%= (@users.created_at).to_formatted_s(:long_ordinal) %></p>
+ +<p>Last login: <%= time_ago_in_words(@users.last_sign_in_at) %></p> 
