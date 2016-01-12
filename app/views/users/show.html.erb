@@ -10,7 +10,7 @@
   <table class="table table-striped">
      <tbody>
        <br/>
-         <%= '/n' render  @item %>
+         <%= render  @item %>
        <br/>
       <%= render partial: 'items/form', locals: {user: @user, item: @user.items.new} %>
     </tbody>
