@@ -18,11 +18,13 @@ require 'faker'
    user.save!
  end
  users = User.all
- # Create test profile
-member = User.new(
-  name: "member2015",
-  email:    "member@example.com",
-  password: "12345678"
-)
-member.skip_confirmation!
-member.save!
+ 
+ 5.times do
+  Item.create!(
+   user_id: users.sample,
+   name: Faker::Lorem.sentence
+   
+  )
+ end
+puts "#{User.count} users created"
+puts "#{Item.count} todos created" 
