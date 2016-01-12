@@ -21,8 +21,9 @@ require 'faker'
  
  5.times do
   Item.create!(
-   user_id: users.sample,
-   name: Faker::Lorem.sentence
+   
+   name: Faker::Lorem.sentence,
+   user_id: users.sample
    
   )
  end
