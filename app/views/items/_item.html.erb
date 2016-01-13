@@ -1,4 +1,8 @@
 <br/>
- <%= item.name %>
+<%= item.name %>
+<br/>
+<p>Days left to complete item: 
+ <%= item.days_left %>
+</p>
 
-<%= link_to "", [@user,item] , method: :delete, class: 'glyphicon glyphicon-ok', remote: true %> 
+<%= link_to "Delete item", [@user,item] , method: :delete, class: 'glyphicon glyphicon-ok', remote: true %> 
