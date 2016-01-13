@@ -2,4 +2,4 @@
   $('#item-' +<%= @item.name %>).fadeOut("slow");
 <% else %>
    $('#item-' +<%= @item.name %>).prepend("<div class='alert alert-danger'><%= flash[:error] %></div> <br />");
-<% end %
+<% end %>
