@@ -21,9 +21,14 @@ require 'faker'
  
  5.times do
   Item.create!(
+<<<<<<< HEAD
    
    name: Faker::Lorem.sentence,
    user_id: users.sample
+=======
+   user: users.sample,
+   name: Faker::Lorem.sentence
+>>>>>>> checkpoint6
    
   )
  end
