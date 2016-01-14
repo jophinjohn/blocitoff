@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 # Use figaro for environment variables
 gem 'figaro', '1.0'
 # Use Bootstrap for CSS styling
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.3.6'
+
 # Use Devis to user authentication
 gem 'devise'
 # Use Pundit for user authorization

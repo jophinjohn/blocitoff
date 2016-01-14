@@ -5,4 +5,4 @@
  <%= item.days_left %>
 </p>
 
-<%= link_to "Delete item", [@user,item] ,class: 'btn btn-danger', method: :delete, class: 'glyphicon glyphicon-star-empty', remote: true %> 
+<%= link_to "Delete item", [@user,item] ,class: 'btn btn-danger', method: :delete, id: "deleteitem-#{item.id}",class: 'glyphicon glyphicon-ok', remote: true %> 
