@@ -18,6 +18,13 @@ require 'faker'
    user.save!
  end
  users = User.all
+ member = User.new(
+  name: "member2015",
+  email:    "member@letsblocitoff.com",
+  password: "123456789"
+)
+member.skip_confirmation!
+member.save!
  
  5.times do
   Item.create!(
