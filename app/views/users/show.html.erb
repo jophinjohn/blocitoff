@@ -7,11 +7,9 @@
  <h1>
     To do list:
  </h1>
-  <table class="table table-striped">
-     <tbody>
+  
        <br/>
          <%= render  @item %>
        <br/>
       <%= render partial: 'items/form', locals: {user: @user, item: @user.items.new} %>
-    </tbody>
-  </table>
+   
