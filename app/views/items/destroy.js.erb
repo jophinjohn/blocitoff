@@ -1,9 +1,5 @@
 <% if @item.destroyed? %>
-<<<<<<< HEAD
   $('-#item-' +<%= @item.id %>).hide("fast")
-=======
-  $('#item-' +<%= @item.id %>).hide();
->>>>>>> checkpoint7
 <% else %>
    $('#item-' +<%= @item.id %>).prepend("<div class='alert alert-danger'><%= flash[:error] %></div> <br />");
 <% end %>
