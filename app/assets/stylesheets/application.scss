@@ -13,8 +13,13 @@
  *= require_tree .
  *= require_self
  */
+<<<<<<< HEAD
 @import "bootstrap-sprockets";
 @import "bootstrap";
+=======
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+>>>>>>> checkpoint7
 
  .user-info {
    margin-top: 9px;

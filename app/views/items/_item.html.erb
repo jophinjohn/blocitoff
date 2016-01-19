@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <br/>
 <%= item.name %>
 <br/>
@@ -6,3 +7,9 @@
 </p>
 
 <%= link_to "Delete item", [@user,item] ,class: 'btn btn-danger', method: :delete,class: 'glyphicon glyphicon-ok', remote: true %> 
+=======
+<div id="item-<%=  item.id %>">
+  <%= item.name %>
+  <%= link_to "Delete", [@user,item] ,class: 'btn btn-danger', method: :delete, class:"glyphicon glyphicon-ok", remote: true %> 
+</div>
+>>>>>>> checkpoint7
