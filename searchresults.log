@@ -1,0 +1,179 @@
+source 'https://rubygems.org'
+
+# Use RSpec framework for test
+# Use figaro for environment variables
+gem 'figaro', '1.0'
+# Use Bootstrap for CSS styling
+gem 'bootstrap-sass'
+# Use Devis to user authentication
+gem 'devise'
+# Use Pundit for user authorization
+gem 'pundit'
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+<<<<<<< HEAD
+gem 'rails', '4.2.1'
+=======
+gem 'rails', '4.2.4'
+>>>>>>> blocitoffcheckpoint3
+# Use PostgreSQL as the database for Active Record in production
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+# Use sqlite3 as the database for Active Record in development
+group :development do
+  gem 'sqlite3'
+end
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 5.0'
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+# Use CoffeeScript for .coffee assets and views
+gem 'coffee-rails', '~> 4.1.0'
+# See https://github.com/rails/execjs#readme for more supported runtimes
+# gem 'therubyracer', platforms: :ruby
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+# Use Faker for seed data
+gem 'faker'
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'turbolinks'
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 2.0'
+# bundle exec rake doc:rails generates the API under doc/api.
+gem 'sdoc', '~> 0.4.0', group: :doc
+
+# Use ActiveModel has_secure_password
+# gem 'bcrypt', '~> 3.1.7'
+
+# Use Unicorn as the app server
+# gem 'unicorn'
+
+# Use Capistrano for deployment
+# gem 'capistrano-rails', group: :development
+
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug'
+
+  # Access an IRB console on exception pages or by using <%= console %> in views
+  gem 'web-console', '~> 2.0'
+
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+  
+  # Use RSpec framework for test
+  gem 'rspec-rails', '~> 3.0'
+  
+  # Use Capybara for feature tests
+  gem 'capybara'
+  
+  # Use FactoryGirl for test factories
+  gem 'factory_girl_rails', '~> 4.0'
+end
+
+<<<<<<< HEAD
+
+     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
+    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
+    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
+    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
+     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
+    ----------------------------------------------------------------- 
+
+
+Welcome to your Rails project on Cloud9 IDE!
+
+To get started, just do the following:
+
+1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
+2. Preview your new app by clicking on the URL that appears in the Run panel below (https://blocitoff-jophinjohn.c9users.io/).
+
+Happy coding!
+The Cloud9 IDE team
+
+
+## Support & Documentation
+
+Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
+To watch some training videos, visit http://www.youtube.com/user/c9ide
+1 Intro
+Build an application that allows users to create self-destructing to-do lists.
+
+Use Case
+
+To-do lists are notorious for collecting junk: to-do items that you want to remember, but are not very important and thus get consistently put-off. To address the problem of to-do list clutter, you will create Blocitoff.
+
+Blocitoff will aim to keep to-do lists manageable by automatically deleting to-do items that have not been completed after seven days. The hypothesis is that if the to-do item is not important enough to be completed in seven days, it doesn't belong on your to-do list.
+
+User Stories
+
+User Story	Difficulty Rating
+As a user, I want to sign up for a free account by providing a user name, password and email	2
+As a user, I want to sign in and out of Blocitoff	2
+As a user, I want to see my profile page	2
+As a user, I want to create multiple to-do items	3
+As a developer, I want to seed the development database automatically with users and to-do items	1
+As a user, I want to mark to-do items as complete and have them deleted	3
+As a user, I want to see how many days remain before a to-do item is automatically deleted	1
+As a user, my to-dos should be automatically deleted seven days after their creation date	2
+=======
+# blocitoff
+Self destructing to do list app
+>>>>>>> b8774be779c3e021d3c2648013ebdb0f1abce89e
+<% if @item.destroyed? %>
+  $('#item-' +<%= @item.id %>).hide();
+<% else %>
+<<<<<<< HEAD
+   $('#item-' +<%= @item.id %>).prepend("<div class='alert alert-danger'><%= flash[:error] %>");
+=======
+   $('#item-' +<%= @item.name %>).prepend("<div class='alert alert-danger'><%= flash[:error] %></div> <br />");
+>>>>>>> checkpoint7
+<% end %><br/>
+<%= item.name %>
+<br/>
+<p>Days left to complete item: 
+ <%= item.days_left %>
+</p>
+
+<<<<<<< HEAD
+<%= link_to "Delete item", [@user,item] ,class: 'btn btn-danger', method: :delete,class: 'glyphicon glyphicon-ok', remote: true %> 
+=======
+<%= link_to "", [item.user,item] ,class: 'btn btn-danger', method: :delete, class:"glyphicon glyphicon-star", remote: true %> 
+>>>>>>> checkpoint7
+<<<<<<< HEAD
+10090
+=======
+9938
+>>>>>>> checkpoint6
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+<<<<<<< HEAD
+@import "bootstrap-sprockets";
+@import "bootstrap";
+=======
+ @import "bootstrap-sprockets"
+ @import "bootstrap";
+>>>>>>> checkpoint7
+
+ .user-info {
+   margin-top: 9px;
+ }
+ 
+ .nav {
+   margin-top: 5px;
+ }
